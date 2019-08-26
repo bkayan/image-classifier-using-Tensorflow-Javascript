@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <!-- import Knn classifier-->
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+
+  </head>
+  <body>
+    <div id="console"></div>
+    <!-- set up the webcam video element -->
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+
+    <!-- buttons to add training images to the model -->
+    <button id="class-a">Add to class A</button>
+    <button id="class-b">Add to class B</button>
+    <button id="class-c">Add to class C</button>
+
+    <!-- Load java script for the index page -->
+    <script src="index.js"></script>
+  </body>
+</html>
